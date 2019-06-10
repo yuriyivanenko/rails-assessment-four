@@ -39,7 +39,7 @@ Read through the instructions to get a sense of the scope of this code challenge
 
 6. One needs to be able to create a new house plant in the app. A new plant requires a plant_type, a height, and the room it is to be placed inside.
 
-7. A plant must have a height and the height cannot be entered as less than 1 inch tall.
+7. A plant must have a height and that height must be greater_than_or_equal_to 1 inch tall.
 
 ## Submission
 
