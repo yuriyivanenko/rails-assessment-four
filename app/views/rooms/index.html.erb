@@ -1,5 +1,7 @@
 <h1>Rooms</h1>
 
-<% @rooms.each do |room| %>
-  <%= room.name %>
-<% end %>
+<ol>
+  <% @rooms.each do |room| %>
+    <li><%= room.name %></li>
+  <% end %>
+</ol>
