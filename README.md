@@ -33,11 +33,13 @@ Read through the instructions to get a sense of the scope of this code challenge
 
 3. The plant show page should include the plant's type, its height in inches (ex: '21 inches'), and its room. The room should link to the room's show page.
 
-4. The room show page should have its name, occupancy, and display all of the plant_types in it.
+4. On the room index page, a room's name should link to its show page.
 
-5. One needs to be able to create a new house plant in the app. A new plant requires a plant_type, a height, and the room it is to be placed inside.
+5. The room show page should have its name, occupancy, and display all of the plant_types in it.
 
-6. A plant must have a height and the height cannot be entered as less than 1 inch tall.
+6. One needs to be able to create a new house plant in the app. A new plant requires a plant_type, a height, and the room it is to be placed inside.
+
+7. A plant must have a height and the height cannot be entered as less than 1 inch tall.
 
 ## Submission
 
