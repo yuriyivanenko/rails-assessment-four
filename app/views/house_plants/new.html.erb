@@ -1,3 +1,16 @@
 <h1>Create a new house plant</h1>
 
-<%= form_with model: @plant %>
+<%= form_with model: @house_plant, local: true do |f| %>
+  <%= f.label :plant_type %>
+  <%= f.text_field :plant_type %>
+  <br>
+
+  <%= f.label :height %>
+  <%= f.text_field :height %>
+  <br>
+
+  <%= f.collection_select :room_id, Room.all, :id, :name, prompt: true%>
+  <br>
+
+  <%= f.submit %>
+<% end %>

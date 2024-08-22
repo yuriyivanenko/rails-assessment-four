@@ -12,6 +12,18 @@ class HousePlantsController < ApplicationController
   end
 
   def create
-    puts params
+    @house_plant = HousePlant.new(house_plant_params)
+
+    if @house_plant.save
+      redirect_to house_plant_path(@house_plant)
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def house_plant_params
+    params.require(:house_plant).permit(:plant_type, :height, :room_id)
   end
 end
