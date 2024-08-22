@@ -4,6 +4,14 @@ class HousePlantsController < ApplicationController
   end
 
   def show
-    @plant = HousePlant.find(params[:id])
+    @house_plant = HousePlant.find(params[:id])
+  end
+
+  def new
+    @house_plant = HousePlant.new
+  end
+
+  def create
+    puts params
   end
 end
