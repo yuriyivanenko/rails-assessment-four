@@ -1,0 +1,31 @@
+<h1>Create a new house plant</h1>
+
+
+
+<%= form_with model: @house_plant, local: true do |f| %>
+  <% if @house_plant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@house_plant.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% @house_plant.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <%= f.label :plant_type %>
+  <%= f.text_field :plant_type %>
+  <br>
+
+  <%= f.label :height %>
+  <%= f.text_field :height %>
+  <br>
+
+  <%= f.collection_select :room_id, Room.all, :id, :name, prompt: true%>
+  <br>
+
+  <%= f.submit %>
+<% end %>
